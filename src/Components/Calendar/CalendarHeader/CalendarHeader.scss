@@ -1,0 +1,29 @@
+.calendar__header {
+  width: 100%;
+  height: 100px;
+  background-color: #026F7F;
+  padding: 20px 40px;
+  
+
+  p {
+    padding: 0px;
+    margin: 0px;
+    color: #EEE9D1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: default;
+    user-select: none;
+    text-shadow: 1px 1px 1px #333;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    color: #EEE9D1;
+    font-weight: bold;
+    font-size: 2.5rem;
+    cursor: default;
+    user-select: none;
+    text-shadow: 1px 1px 1px #333;
+  }
+}

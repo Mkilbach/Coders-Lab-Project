@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box
+}
+
+.calendar__days {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.calendar__day {
+  display: inline-block;
+  width: calc(100% / 7);
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  
+  
+}
+  
+.calendar__day--currentMonth{
+  
+  color: #222;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    font-weight: bold;
+    border-left: 3px solid #0A1C28;
+    border-right: 3px solid white;
+    color: #222;
+  }
+}
+
+.calendar__day--currentDay {
+  background-color: #72A7A3
+}

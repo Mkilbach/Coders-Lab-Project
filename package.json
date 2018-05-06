@@ -14,12 +14,14 @@
   "dependencies": {
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "json-server": "^0.12.2",
     "node-sass": "^4.8.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.1",
-    "style-loader": "^0.21.0"
+    "style-loader": "^0.21.0",
+    "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

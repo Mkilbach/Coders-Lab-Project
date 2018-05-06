@@ -1,31 +1,22 @@
 import React, { Component, Fragment } from "react";
 
+import { ChangeMonthArrow } from "./ChangeMonthArrow/ChangeMonthArrow";
+
 import "./CalendarHeader.scss";
 
-export class CalendarHeader extends Component {
-  constructor(props) {
-    super();
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-    this.state = {
-      currentDay: props.currentDay,
-      currentMonth: months[props.currentMonth - 1],
-      visibleMonth: months[props.currentMonth - 1],
-      currentYear: props.currentYear
-    };
-  }
-
-  componentDidMount() {}
-
-  render() {
-    return (
-      <Fragment>
-        <div className="calendar__header">
-          <p>{this.state.currentYear}</p>
-          <h1>{this.state.currentMonth}</h1>
-        </div>
-      </Fragment>
-    );
-  }
-}
+export const CalendarHeader = (props) => {
+  return (
+    <Fragment>
+      <div className="calendar__header">
+        <ChangeMonthArrow type={"-"} changeMonth={props.changeMonth} />
+          <section>
+            <p>{props.year}</p>
+            <h1>{MONTHS[props.month - 1]}</h1>
+          </section>
+        <ChangeMonthArrow type={"+"} changeMonth={props.changeMonth} />
+      </div>
+    </Fragment>
+  );
+};

@@ -5,21 +5,12 @@ import { MonthDays } from "./MonthDays/MonthDays";
 
 import "./CalendarBody.scss";
 
-export class CalendarBody extends Component {
-  constructor(props) {
-    super();
+export const CalendarBody = (props) => {
 
-    this.state = {
-      currentDay: props.currentDay
-    };
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <WeekDays />
-        <MonthDays currentYear={this.props.currentYear} currentMonth={this.props.currentMonth} currentDay={this.state.currentDay} />
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <WeekDays />
+      <MonthDays date={props.date} year={props.year} month={props.month} days={props.days} apps={props.apps}/>
+    </Fragment>
+  );
+};

@@ -1,29 +1,61 @@
 .calendar__header {
-  width: 100%;
-  height: 100px;
-  background-color: #026F7F;
-  padding: 20px 40px;
-  
-
-  p {
-    padding: 0px;
-    margin: 0px;
-    color: #EEE9D1;
+    width: 100%;
+    height: 100px;
+    background-color: #3E6170;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F2F2F2;
     font-weight: bold;
-    font-size: 1.2rem;
-    cursor: default;
-    user-select: none;
-    text-shadow: 1px 1px 1px #333;
-  }
 
-  h1 {
-    margin: 0;
-    text-align: center;
-    color: #EEE9D1;
-    font-weight: bold;
-    font-size: 2.5rem;
-    cursor: default;
-    user-select: none;
-    text-shadow: 1px 1px 1px #333;
+    button {
+      background: none;
+      border: none;
+      color: #F2F2F2;
+      font-weight: bolder;
+      font-size: 1.8rem;
+      height: 100%;
+      padding: 0 30px;
+      text-shadow: 3px 3px #333;
+
+      &:hover:first-of-type {
+        background: #527584; /* Old browsers */
+        background: -moz-linear-gradient(left, #527584 0%, #3e6170 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #527584 0%,#3e6170 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #527584 0%,#3e6170 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#527584', endColorstr='#3e6170',GradientType=1 ); /* IE6-9 */
+      }
+      &:hover:last-of-type {
+        background: #3e6170; /* Old browsers */
+        background: -moz-linear-gradient(left, #3e6170 0%, #527584 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #3e6170 0%,#527584 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #3e6170 0%,#527584 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e6170', endColorstr='#527584',GradientType=1 ); /* IE6-9 */
+      }
+    }
+    
+    section {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+
+      p {
+        font-size: 1.2rem;
+        cursor: default;
+        user-select: none;
+        text-align: center;
+        text-shadow: 2px 2px #333;
+      }
+    
+      h1 {
+        text-align: center;
+        color: #F2F2F2;
+        font-weight: bold;
+        font-size: 2.5rem;
+        cursor: default;
+        user-select: none;
+        text-shadow: 2px 2px #333;
+      }
+    }
   }
-}

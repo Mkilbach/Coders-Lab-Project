@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box
+    box-sizing: border-box
 }
-
+  
 .calendar__days {
   display: flex;
   flex-wrap: wrap;
@@ -14,25 +14,40 @@
   height: 40px;
   text-align: center;
   line-height: 40px;
-  
-  
 }
   
 .calendar__day--currentMonth{
-  
+  background-color: #D1DDBD;
   color: #222;
   font-weight: 500;
   cursor: pointer;
 
   &:hover {
-    background-color: white;
+    background-color: lighten(#D1DDBD, 5%);
     font-weight: bold;
-    border-left: 3px solid #0A1C28;
-    border-right: 3px solid white;
     color: #222;
+    text-shadow: none;
   }
 }
 
+
+
+.calendar__day--appointed{
+  background-color: darken(#D1DDBD, 10%);
+
+  &:hover {
+    background-color: darken(#D1DDBD, 7%);
+  }
+}
+  
 .calendar__day--currentDay {
-  background-color: #72A7A3
+  background-color: #3E6170;
+  color: #F2F2F2;
+  font-weight: bold;
+  text-shadow: 1px 1px #333;
+
+  &:hover {
+    background-color: lighten(#3E6170, 10%);
+    color: #F2F2F2;
+  }
 }
